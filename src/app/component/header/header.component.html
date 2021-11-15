@@ -1,0 +1,6 @@
+<p>
+  header works!
+  <a *ngFor="let even of ['/about', '/body/body1']" [routerLink]="[even]" style="margin-right: 20px;">
+    {{even|app}}
+  </a>
+</p>

@@ -1,0 +1,4 @@
+<a *ngFor="let even of ['/body/body1', '/body/body2']" [routerLink]="[even]" style="margin-right: 20px;">
+  {{even|app}}
+</a>
+<router-outlet></router-outlet>
