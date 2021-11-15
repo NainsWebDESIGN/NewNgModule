@@ -13,9 +13,6 @@ import { AboutComponent } from '@app/about/about.component';
 // Service
 import { ApiService } from '@service';
 
-// Pipe
-// import { AppPipe } from '@pipe';
-
 // Module
 import { BodyModule } from '@app/body/body.module';
 import { AppPipeModule } from './pipe/AppPipe.module';
@@ -26,8 +23,7 @@ import { AppPipeModule } from './pipe/AppPipe.module';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent,
-    // AppPipe
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +33,6 @@ import { AppPipeModule } from './pipe/AppPipe.module';
     BodyModule,
     AppPipeModule
   ],
-  // exports: [AppPipe],
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
